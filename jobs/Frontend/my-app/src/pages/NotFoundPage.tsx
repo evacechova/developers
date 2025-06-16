@@ -1,11 +1,11 @@
-import { BackToHPButton } from '../components/BackToHPButton';
+import { NavigationBack } from '../components/NavigationBack';
 import { NotFoundMessage } from '../components/NotFoundMessage';
 import { PageSection } from '../components/PageSection';
 
 export const NotFoundPage = () => {
   return (
     <PageSection>
-      <BackToHPButton />
+      <NavigationBack />
       <NotFoundMessage />
     </PageSection>
   );
