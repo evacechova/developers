@@ -1,10 +1,11 @@
 import styled from 'styled-components';
-import { useParams, Link } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { useQuery } from '@tanstack/react-query';
 import { fetchMovieDetails } from '../search-api.tsx';
 import { PageSection } from '../components/PageSection.tsx';
 import fallback_image from './../assets/image-load-failed.svg';
 import { NotFoundPage } from './NotFoundPage.tsx';
+import { NavigationBack } from '../components/NavigationBack.tsx';
 
 const StyledColumn = styled.div`
   display: flex;
@@ -69,13 +70,7 @@ export const MovieDetailPage = () => {
   return (
     <>
       <PageSection>
-        <Link
-          className="gradient-hover f-link-md"
-          to="/"
-          aria-label="Back to search"
-        >
-          ← Back to search
-        </Link>
+        <NavigationBack />
       </PageSection>
       <PageSection direction="row" $backgroundcolor="#e0e0e0">
         <img
