@@ -62,7 +62,7 @@ export const MovieSearchPage = () => {
   const movieList = debouncedQuery ? movies : popularMovies;
 
   return (
-    <ErrorBoundary fallback={<div>Error loading movies - ErrorBoundary!</div>}>
+    <ErrorBoundary fallback={<div>Error loading movies!</div>}>
       <div>
         <PageSection>
           <Link to={'/'} onClick={handleReset}>
