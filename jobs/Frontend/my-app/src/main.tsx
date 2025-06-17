@@ -7,7 +7,6 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { MovieSearchPage } from './pages/MovieSearchPage';
 import { MovieDetailPage } from './pages/MovieDetailPage';
 import { NotFoundPage } from './pages/NotFoundPage';
-import { ErrorBoundary } from 'react-error-boundary';
 
 const queryClient = new QueryClient();
 
@@ -26,10 +25,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <ErrorBoundary fallback={<div>Error Boundary</div>}>
-      <QueryClientProvider client={queryClient}>
-        <RouterProvider router={router} />
-      </QueryClientProvider>
-    </ErrorBoundary>
+    <QueryClientProvider client={queryClient}>
+      <RouterProvider router={router} />
+    </QueryClientProvider>
   </StrictMode>
 );
