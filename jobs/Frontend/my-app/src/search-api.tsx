@@ -4,9 +4,9 @@ const tmdbApiKey = import.meta.env.VITE_TMDB_API_KEY;
 export interface Movie {
   id: number;
   title: string;
-  releaseDate: string;
-  voteAverage: string;
-  posterPath: string;
+  release_date: string;
+  vote_average: string;
+  poster_path: string;
 }
 
 export interface MoviesData {

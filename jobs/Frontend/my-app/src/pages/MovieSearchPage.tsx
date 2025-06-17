@@ -82,10 +82,10 @@ export const MovieSearchPage = () => {
               {movieList.movieArray.map((movie: Movie) => (
                 <MovieCard
                   key={movie.id}
-                  poster={movie.posterPath}
+                  poster={movie.poster_path}
                   name={movie.title}
-                  rating={movie.voteAverage}
-                  release_date={movie.releaseDate}
+                  rating={movie.vote_average}
+                  release_date={movie.release_date}
                   to={`movie-detail/${movie.id}`}
                 />
               ))}
