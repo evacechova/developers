@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { useParams } from 'react-router-dom';
 import { useQuery } from '@tanstack/react-query';
 import { fetchMovieDetails } from '../search-api.tsx';
-import { PageSection } from '../components/PageSection.tsx';
+import { PageSection } from '../components/PageSection/PageSection.tsx';
 import fallback_image from './../assets/image-load-failed.svg';
 import { NotFoundPage } from './NotFoundPage.tsx';
 import { NavigationBack } from '../components/NavigationBack.tsx';
