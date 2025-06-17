@@ -1,4 +1,4 @@
-import { PageSection } from '../components/PageSection.tsx';
+import { PageSection } from '../components/PageSection/PageSection.tsx';
 import { Pagination } from '../components/Pagination/Pagination.tsx';
 import { SearchBar } from '../components/SearchBar.tsx';
 import { MovieCard } from '../components/MovieCard.tsx';
